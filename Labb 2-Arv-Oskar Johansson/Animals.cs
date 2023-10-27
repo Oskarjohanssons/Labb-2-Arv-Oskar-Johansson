@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace Labb_2_Arv_Oskar_Johansson
@@ -13,7 +14,15 @@ namespace Labb_2_Arv_Oskar_Johansson
         public string Species;
         public string FavoriteFood;
         public string Roar;
+        public Animals(int newAge, string newName, string newSpecies, string newFavoritFood, string newRoar)
+        {
+            Age = 0;
+            Name = "No Name";
+            Species = "No Species added";
+            FavoriteFood = "No favorite food added";
+            Roar = "No roar was implemented";
 
+        }
         public void Makesound()
         {
             Console.WriteLine($"The {Species} is saying {Roar}");
@@ -27,18 +36,6 @@ namespace Labb_2_Arv_Oskar_Johansson
             Console.WriteLine($"{Name} is sleeping.");
         }
 
-
-    }
-    public class Dog : Animals
-    {
-
-    }
-    public class Frog : Animals
-    {
-
-    }
-    public class Ape : Animals
-    {
 
     }
 
