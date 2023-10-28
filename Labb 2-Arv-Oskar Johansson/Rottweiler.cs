@@ -8,5 +8,9 @@ namespace Labb_2_Arv_Oskar_Johansson
 {
     public class Rottweiler : Dog
     {
+        public Rottweiler(int newAge, string newName, string newSpecies, string newFavoritFood, string newRoar)
+        {
+
+        }
     }
 }

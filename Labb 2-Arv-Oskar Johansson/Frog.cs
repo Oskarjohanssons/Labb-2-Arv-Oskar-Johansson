@@ -8,5 +8,9 @@ namespace Labb_2_Arv_Oskar_Johansson
 {
     public class Frog : Animals
     {
+        public Frog (int newAge, string newName, string newSpecies, string newFavoritFood, string newRoar)
+        {
+
+        }
     }
 }

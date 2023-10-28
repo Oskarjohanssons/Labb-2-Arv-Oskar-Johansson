@@ -16,11 +16,11 @@ namespace Labb_2_Arv_Oskar_Johansson
         public string Roar;
         public Animals(int newAge, string newName, string newSpecies, string newFavoritFood, string newRoar)
         {
-            Age = 0;
-            Name = "No Name";
-            Species = "No Species added";
-            FavoriteFood = "No favorite food added";
-            Roar = "No roar was implemented";
+            Age = newAge;
+            Name = newName;
+            Species = newSpecies;
+            FavoriteFood = newFavoritFood;
+            Roar = newRoar;
 
         }
         public void Makesound()
