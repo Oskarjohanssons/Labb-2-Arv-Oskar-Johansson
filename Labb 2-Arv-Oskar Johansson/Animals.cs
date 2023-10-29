@@ -9,23 +9,24 @@ namespace Labb_2_Arv_Oskar_Johansson
 {
     public class Animals
     {
-        public int Age;
-        public string Name;
-        public string Species;
-        public string FavoriteFood;
-        public string Roar;
-        public Animals(int newAge, string newName, string newSpecies, string newFavoritFood, string newRoar)
+        public int Age { get; set; }
+        public string Name { get; set; }
+        public string Color { get; set; }
+        public string FavoriteFood { get; set; }
+        public double Weight { get; set; }
+        public Animals(int newAge, string newName, string newColor, string newFavoritFood, double newWeight)
         {
             Age = newAge;
             Name = newName;
-            Species = newSpecies;
+            Color = newColor;
             FavoriteFood = newFavoritFood;
-            Roar = newRoar;
+            Weight = newWeight;
+
 
         }
-        public void Makesound()
+        public virtual void MakeSound()
         {
-            Console.WriteLine($"The {Species} is saying {Roar}");
+            Console.WriteLine($"The animal is saying something");
         }
         public void Eat()
         {
@@ -33,7 +34,15 @@ namespace Labb_2_Arv_Oskar_Johansson
         }
         public void Sleep() 
         {         
-            Console.WriteLine($"{Name} is sleeping.");
+            Console.WriteLine($"{Name} is now sleeping shhhhh!!!");
+        }
+        public void AnimalInfo()
+        {
+            Console.WriteLine($"Name: {Name}");
+            Console.WriteLine($"Age: {Age} years old");
+            Console.WriteLine($"Color: {Color}");
+            Console.WriteLine($"Weight: {Weight} kg");
+            Console.WriteLine($"Favorit food: {FavoriteFood}");
         }
 
 
